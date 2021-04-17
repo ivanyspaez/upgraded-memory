@@ -11,9 +11,13 @@ class Persona:
 
     def getId(self):
         return self.__id
-
     def setId(self,ID):
         self.__id = ID
+        
+    def getFoto(self):
+        return self.__foto
+    def setFoto(self, foto):
+        self.__foto = foto
 
     def __str__(self) -> str:
         return "ID: " + self.getId() + ""
