@@ -14,5 +14,6 @@ class Cliente (Persona):
     def setDireccion(self,direccion):
         self.__direccion = direccion
 
+
     def __str__(self):
         return super().__str__() + "Dirección: "+self.getDireccion()
