@@ -5,16 +5,14 @@ class nodeD(object):
         self.dato = dato
         self.prev = prev
         self.next = next
-
-
     def __str__(self):
         return str(self.dato)
+
+
 class node(object):
     def __init__(self, dato=None, next = None):
         self.dato = dato
         self.next = next
-
-
     def __str__(self):
         return str(self.dato)
 
