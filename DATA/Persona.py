@@ -60,7 +60,6 @@ class Persona:
             self.__Telefono = telefono
 
     def __str__(self):
-
         return (super().__str__() + "Nombre: " + self.getNombre() + "\n"
                 + "Apellido: " + self.getApellido() + "\n"
                 + "Clave de acceso: " + self.getClave() + "\n" + "Correo: "
