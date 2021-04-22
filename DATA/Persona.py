@@ -22,4 +22,4 @@ class Persona:
         self.__nombre = nombre
 
     def __str__(self) -> str:
-        return "ID: " + self.getId() + ""
+        return "ID: " + self.getId() + "Probando"
