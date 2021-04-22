@@ -19,5 +19,10 @@ class Persona:
     def setFoto(self, foto):
         self.__foto = foto
 
-    def __str__(self) -> str:
-        return "ID: " + self.getId() + ""
+    def __str__(self):
+        return (super().__str__() + "Nombre: " + self.getNombre() + "\n"
+                + "Apellido: " + self.getApellido() + "\n"
+                + "Clave de acceso: " + self.getClave() + "\n" + "Correo: "
+                + self.getCorreo() + "\n" + "Identificacion: "
+                + self.getIdentificacion() + "\n" + "Id Usuario: "
+                + self.getID() + "\n" + "Telefono: " + self.getTelefono())
