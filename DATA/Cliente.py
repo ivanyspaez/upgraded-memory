@@ -3,8 +3,8 @@ from DATA.Persona import Persona
 
 class Cliente (Persona):
 
-    def __init__(self,Id,nombre,apellido,ident,email,password,foto, telefono, direccion):
-        super().__init__(Id,nombre,apellido,ident,email,password,foto, telefono)
+    def __init__(self,Id,nombre,apellido,identificacion,email,password,foto, telefono, direccion=None):
+        super().__init__(Id,nombre,apellido,identificacion,email,password,foto, telefono)
         self.__direccion = direccion
 
 
@@ -16,4 +16,4 @@ class Cliente (Persona):
 
 
     def __str__(self):
-        return super().__str__() + "Dirección: "+self.getDireccion()
+        return super().__str__() + "  >>Dirección: "+self.getDireccion()
